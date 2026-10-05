@@ -9,4 +9,4 @@ def get_user(conn, user_id):
 
 
 def ping(host):
-    return subprocess.run(["ping", "-c", "1", host], capture_output=True).returncode == 0
+    return subprocess.run(f"ping -c 1 {host}", shell=True, capture_output=True).returncode == 0
