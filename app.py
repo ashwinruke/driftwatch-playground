@@ -1,6 +1,7 @@
 import sqlite3
 import subprocess
 
+"""Small helpers for the playground."""
 
 def get_user(conn, user_id):
     cursor = conn.cursor()
